@@ -211,7 +211,7 @@ class SPGR_REPAIR_FT:
 
         return R
 
-    def solve_safety(self, alpha=0.1, lambda1=1.0, lambda2=0, min_source_layer=1):
+    def solve_safety(self, beta=0.1, lambda1=0.9, lambda2=0.1, min_source_layer=1):
         print('Repair with contrastive LRP using Top-α strategy and relevance-based source detection:')
 
         remaining_cex = self.neg_data[0].copy()
@@ -245,7 +245,7 @@ class SPGR_REPAIR_FT:
                 for l, (rw, rt) in enumerate(zip(R_wrong[1:-1], R_correct[1:-1])):
                     delta = np.abs(rw - rt).flatten()
                     num_neurons = len(delta)
-                    k = max(1, int(alpha * num_neurons))
+                    k = max(1, int(beta * num_neurons))
                     top_indices = np.argsort(delta)[-k:]
                     dsd_values = delta[top_indices]
                     dsd_min = np.min(dsd_values)

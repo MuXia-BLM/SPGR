@@ -37,10 +37,14 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--network', type=int, default=19)
     parser.add_argument('--alpha', type=float, default=0.5)
+    parser.add_argument('--beta', type=float, default=0.1)
+    parser.add_argument('--lambda1', type=float, default=0.9)
+    parser.add_argument('--lambda2', type=float, default=0.1)
     parser.add_argument('--min_source_layer', type=int, default=0)
-    parser.add_argument('--repair_neurons_num', type=int, default=20)
+    parser.add_argument('--repair_neurons_num', type=int, default=1)
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--max_iterations', type=int, default=10)
+
     args = parser.parse_args()
 
     networks = repair_list
@@ -90,7 +94,7 @@ if __name__ == '__main__':
         if network in two:
             min_source_layer = 2
 
-        NC, RSR, GEN, DD, Time = spgr_rp.solve_safety(alpha=0.1, lambda1=0.9, lambda2=0.1, min_source_layer=min_source_layer)
+        NC, RSR, GEN, DD, Time = spgr_rp.solve_safety(beta=args.beta, lambda1=args.lambda1, lambda2=args.lambda2, min_source_layer=min_source_layer)
         NC_list.append(NC)
         RSR_list.append(RSR)
         GEN_list.append(GEN)

@@ -24,7 +24,7 @@ def relu(x: np.ndarray) -> np.ndarray:
 
 class SPGR_REPAIR_FT:
 
-    def __init__(self, model, repair_num, alpha, max_iterations):
+    def __init__(self, model, alpha, max_iterations):
         self.model = model
         self.model_R = copy.deepcopy(model)
         self.pso_particle_batch = 8
@@ -262,7 +262,7 @@ class SPGR_REPAIR_FT:
             R[l - 1] = A * C
         return R
 
-    def solve_robustness(self, alpha=0.7, lambda1=0.9, lambda2=0.1, repair_rate=0.8):
+    def solve_robustness(self, beta=0.7, lambda1=0.9, lambda2=0.1, repair_rate=0.8):
         print(' 开始鲁棒性修复（全局Top-α + 源头评分 + 路径优先）...')
 
         remaining_cex = np.ascontiguousarray(self.neg_train_data[0], dtype=np.float32)
@@ -295,7 +295,7 @@ class SPGR_REPAIR_FT:
 
                 L_hidden = self.num_layers  # 3 隐藏层
 
-                top_alpha = float(alpha)
+                top_beta = float(beta)
                 lam1, lam2 = float(lambda1), float(lambda2)
 
 
@@ -310,7 +310,7 @@ class SPGR_REPAIR_FT:
                     delta = np.abs(Rw - Rt)  # (units,)
 
                     n = delta.size  # 每层的神经元数量
-                    k = max(1, int(top_alpha * n))  # 计算每层的 Top-k，top_alpha=0.1 时就是取前 10 个
+                    k = max(1, int(top_beta * n))  # 计算每层的 Top-k，top_alpha=0.1 时就是取前 10 个
 
                     # 取前 k 个神经元，并按分数降序排列
                     if k < n:
