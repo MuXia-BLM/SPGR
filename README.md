@@ -33,11 +33,12 @@ parser.add_argument('--beta', type=float, default=0.1, help='Weight factor for p
 parser.add_argument('--lambda1', type=float, default=0.9, help='Source neuron scoring parameter λ1')
 parser.add_argument('--lambda2', type=float, default=0.1, help='Source neuron scoring parameter λ2')
 
-## Acknowledgements
+
+
+## 🙏 Acknowledgements
 This repository is built upon and inspired by the following excellent works:
-
-BIRDNN
-
-CARE
+- [BIRDNN](https://github.com/ByteTao5/BIRDNN)  
+- [CARE](https://github.com/sunbingsmu/care)  
 
 We thank the authors for their contributions.
+
