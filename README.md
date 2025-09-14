@@ -7,7 +7,7 @@ Both tasks aim to identify and repair faulty neurons with minimal parameter modi
 
 ---
 
-## 🔧 Tasks
+##  Tasks
 
 ### 1. ACAS Xu Safety Repair
 - **Entry file:** `ACASXU_Repir.py`
@@ -23,7 +23,7 @@ python MNIST_Repair.py --alpha 0.5 --beta 0.3 --lambda1 0.9 --lambda2 0.1
 
 ---
 
-## ⚙️ Arguments
+##  Arguments
 
 Both tasks support the following parameters:
 
@@ -32,3 +32,12 @@ parser.add_argument('--alpha', type=float, default=0.5, help='Trade-off factor b
 parser.add_argument('--beta', type=float, default=0.1, help='Weight factor for path repair optimization')
 parser.add_argument('--lambda1', type=float, default=0.9, help='Source neuron scoring parameter λ1')
 parser.add_argument('--lambda2', type=float, default=0.1, help='Source neuron scoring parameter λ2')
+
+## Acknowledgements
+This repository is built upon and inspired by the following excellent works:
+
+BIRDNN
+
+CARE
+
+We thank the authors for their contributions.
