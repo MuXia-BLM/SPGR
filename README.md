@@ -23,6 +23,15 @@ python MNIST_Repair.py --alpha 0.5 --beta 0.3 --lambda1 0.9 --lambda2 0.1
 
 ---
 
+## 🙏 Acknowledgements
+This repository is built upon and inspired by the following excellent works:
+- [BIRDNN](https://github.com/ByteTao5/BIRDNN)  
+- [CARE](https://github.com/sunbingsmu/care)  
+
+We thank the authors for their contributions.
+
+---
+
 ##  Arguments
 
 Both tasks support the following parameters:
@@ -35,10 +44,5 @@ parser.add_argument('--lambda2', type=float, default=0.1, help='Source neuron sc
 
 
 
-## 🙏 Acknowledgements
-This repository is built upon and inspired by the following excellent works:
-- [BIRDNN](https://github.com/ByteTao5/BIRDNN)  
-- [CARE](https://github.com/sunbingsmu/care)  
 
-We thank the authors for their contributions.
 
