@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="root@paas.183-175-12-11.nip.io:30023 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:31035 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_610" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:31089 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:31391 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_409" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:31501 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_864" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:31791 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_480" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@paas.183-175-12-11.nip.io:32557 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

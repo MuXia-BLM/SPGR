@@ -1,0 +1,10 @@
+INFO 2024-11-21 14:50:42,343 - Neural Network 3 3
+INFO 2024-11-21 14:50:42,969 - Iteration of repair: 0
+INFO 2024-11-21 14:50:42,977 - Accuracy on the test data: 100.00% 
+INFO 2024-11-21 14:50:42,978 - Start retraining for the repair...
+INFO 2024-11-21 14:50:46,639 - The retraining is done
+
+INFO 2024-11-21 14:50:46,640 - Total running time: 4.27 sec
+INFO 2024-11-21 14:50:46,641 - 
+****************************************************************
+
