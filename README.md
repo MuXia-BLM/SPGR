@@ -12,13 +12,13 @@ Both tasks aim to identify and repair faulty neurons with minimal parameter modi
 ### 1. ACAS Xu Safety Repair
 - **Entry file:** `ACASXU_Repir.py`
 - Description: Repair erroneous behaviors in the ACAS Xu benchmark networks under safety-critical constraints.
-- ### Run ACAS Xu safety repair
+- ### Run ACAS Xu safety repair：
 python ACASXU_Repir.py --alpha 0.5 --beta 0.1 --lambda1 0.9 --lambda2 0.1
 
 ### 2. MNIST Robustness Repair
 - **Entry file:** `MNIST_Repair.py`
 - Description: Enhance the robustness of MNIST classification models against counterexamples and adversarial-like perturbations.
-- ### Run MNIST robustness repair
+- ### Run MNIST robustness repair：
 python MNIST_Repair.py --alpha 0.5 --beta 0.3 --lambda1 0.9 --lambda2 0.1
 
 ---
