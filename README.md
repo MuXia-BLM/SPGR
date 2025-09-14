@@ -1,6 +1,6 @@
 # SPGR
 DNN Repair Method
-# SPGR: Source-Path Guided Repair for Neural Networks
+# SPGR: Source-Path Guided Repair for Deep Neural Networks
 
 This repository provides implementations of two repair tasks for deep neural networks: **safety repair on ACAS Xu networks** and **robustness repair on MNIST models**.  
 Both tasks aim to identify and repair faulty neurons with minimal parameter modifications, improving model safety and robustness while preserving correct behaviors.
